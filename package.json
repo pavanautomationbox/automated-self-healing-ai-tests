@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "automated-self-healing-ai-tests",
+  "version": "1.0.0",
+  "description": "Automated self-healing tests with AI-powered locator prediction",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "npm install",
+    "compile": "npx tsc --build --clean && npx tsc --build",
+    "run": "rimraf ./reports/ && cucumber-js --config=cucumber.js"
+  },
+  "keywords": [],
+  "author": "Pavankumar",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.49.1",
+    "@tensorflow/tfjs-node": "^3.0.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

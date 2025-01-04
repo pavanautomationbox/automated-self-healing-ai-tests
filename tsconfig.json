@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+        /* If transpiling with TypeScript: */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "allowJs": true,
+    //"resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    
+    /* Strictness */
+    "strict": false,
+    "noUncheckedIndexedAccess": true,
+
+    "outDir": "build",
+    "sourceMap": true,
+
+    /* AND if you're building for a library: */
+    "declaration": true,
+
+    /* AND if you're building for a library in a monorepo: */
+    "composite": true,
+    "declarationMap": true,
+    /* If your code runs in the DOM: */
+    "lib": ["ESNext", "dom", "dom.iterable"],
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "build"],
+  "types": [
+      "node" ]
+}
